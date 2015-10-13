@@ -7,7 +7,10 @@ class UrlMappings {
 			}
 		}
 
-		"/"(view:"/index")
+		// 修改默认主页
+		// "/"(view:"/index")
+		"/"(controller: "netInterface", action: "index")
+
 		"500"(view:'/error')
 	}
 }
